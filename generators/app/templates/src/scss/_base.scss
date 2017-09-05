@@ -1,0 +1,33 @@
+$lightgreyborder: #e6e6e6; //伪类通用样式 
+
+%pseudo-Element {
+  display: block;
+  content: "";
+  position: absolute;
+}
+//鼠标按下效果
+
+%btnActive {
+  &:active {
+    opacity: 0.83;
+    outline: none;
+  }
+}
+//1像素边框
+@mixin border-1px($bdColor:$lightgreyborder) {
+  position: relative;
+
+  &::after {
+    @extend %pseudo-Element;
+    width: 100%;
+    border-bottom: 1px solid $bdColor;
+    transform: scaleY(0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+%border-1px {
+  @include border-1px;
+}

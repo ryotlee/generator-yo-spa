@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* reset */
+article,
+aside,
+body,
+button,
+cite,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+img,
+input,
+li,
+menu,
+nav,
+p,
+section,
+table,
+td,
+textarea,
+th,
+ul {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: left;
+	line-height: normal;
+	list-style-type: none;
+	font-family: Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+}
+
+a {
+	color: #323232;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+em,
+i,
+u {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+	outline: none;
+	background: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	/*font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;*/
+}
+/* end reset */
+/* public */
+.clear {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+/* end public */
+.pubFlex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+/*普通flex布局 */
+.autoFlex {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+/*宽度自动伸缩*/
+.a_center {
+	display: -webkit-box;
+	/*控制元素绝对居中			 */
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.oneline_text {
+	overflow: hidden;
+	/*单行文字溢出用点显示			 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.threeline_text,
+.twoline_text {
+	overflow: hidden;
+	display: -webkit-box;
+	/*两行文字溢出用点显示	 		 */
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.threeline_text {
+	-webkit-line-clamp: 3;
+	/*三行文字溢出用点显示(改变clamp即可)*/
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.pr {
+	position: relative;
+}
+
+.pa {
+	position: absolute;
+}
+
+.pf {
+	position: fixed;
+}
+
+.tal {
+	text-align: left;
+}
+
+.tac {
+	text-align: center;
+}
+
+.tar {
+	text-align: right;
+}
+
+.clr {
+	clear: both;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ".";
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.cent {
+	margin: 0 auto;
+	clear: both;
+}
+
+.lh20 {
+	line-height: 2;
+}
+
+.lh15 {
+	line-height: 1.5;
+}

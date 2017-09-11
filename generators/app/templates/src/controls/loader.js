@@ -1,5 +1,5 @@
 require('../css/_loaders.css')
-var _$ = require('../core/core.js')
+var _$ = require('gy-zmquery')
 
 var loaderID = 'zm_mask_loader'
 var loaderView;

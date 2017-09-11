@@ -1,5 +1,5 @@
 require('../scss/_alert.scss')
-var _$ = require('../core/core.js')
+var _$ = require('gy-zmquery')
 
 function show(message, title) {
   var t = title || '温馨提示'

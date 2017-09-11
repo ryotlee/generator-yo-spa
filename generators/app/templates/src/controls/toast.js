@@ -1,6 +1,6 @@
 require('../scss/_toast.scss')
 
-var _$ = require('../core/core.js')
+var _$ = require('gy-zmquery')
 var toastView;
 var timeOutId = -1;
 var DEFAULT_DURATION = 2300 // 默认3000毫秒
